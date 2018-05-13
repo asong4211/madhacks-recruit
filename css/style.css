@@ -46,6 +46,19 @@ p {
     padding: 50px;
 
 }
+
+.container .row form{
+  background:none;
+  text-align:center;
+  padding: 30px;
+  color:white;
+  font-size: 20px;
+  margin: 0 auto;
+}
+.container .row .emaillist{
+  width:100%;
+}
+
 .centeralign{
     text-align: center;
 }
@@ -67,7 +80,7 @@ iframe{
   border:none;
   border-bottom: 2px solid white;
   background-color: transparent;
-  color:#da2e2e;
+  color:white;
   font-size: 20px;
   width: 400px;
 }
@@ -86,7 +99,9 @@ iframe{
   border-color:#da2e2e
 }
 
-
+#team{
+  background-color: d6d8d8;
+}
 .row i{
   margin-top:20px;
   color:white;
@@ -103,10 +118,12 @@ iframe{
   height:370px;
 }
 
-.row .engineering{
+.row .engineering .background{
   background-image: url("../img/engineering.jpg");
   background-size: contain;
   background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
 }
 
 .row .engineering:hover{
@@ -130,6 +147,8 @@ iframe{
 }
 .row .diff-teams h3{
   color:white;
+  position: absolute;
+  top: 10px;
 }
 
 
