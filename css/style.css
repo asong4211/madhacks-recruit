@@ -10,7 +10,7 @@ p {
     filter: opacity(70%);
 }
 .parallax-effect {
-    background-image: url('../img/mini.jpg');
+    background-image: url('img/mini.JPG');
     height: 70%;
     background-attachment: fixed;
     background-position: center;
