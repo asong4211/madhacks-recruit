@@ -11,33 +11,18 @@ p {
 }
 h3#big {
   font-size: 44px;
-  font-weight: 600;
-}
-.btn-primary {
-  background-color: #f3a022 !important;
-}
-.btn-primary:hover {
-  outline: none !important;
+  font-weight: 800;
 }
 
 .parallax-effect {
-    /* background: url(https://raw.githubusercontent.com/calhacks/recruiting-sp18/master/css/../img/team.jpg) no-repeat bottom fixed; */
-    /* filter: brightness(0.5); */
-    height: 70%;
+    height: 80%;
     z-index: 1;
 
 }
 .header-background {
   position: fixed; top: 0;
-  height: 70%;
+  height: 80%;
   width: 100%;
-  /* background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 0;
-  filter: brightness(0.4);
-  z-index: -1; */
   z-index: -1;
   filter: brightness(0.5);
 }
@@ -73,13 +58,12 @@ h3#big {
 }
 
 .parallax-effect .row .text-center{
-    text-align: center;
+    text-align:center;
     color:white;
     font-size: 40px;
     padding: 50px;
 
 }
-
 .container .row form{
   background:none;
   text-align:center;
@@ -88,27 +72,23 @@ h3#big {
   font-size: 20px;
   margin: 0 auto;
 }
+
 .container .row .emaillist{
   width:100%;
 }
+.row .clear input{
+  margin-top:40px;
+  background-color: #0a3e54;
+  border-color: #0a3e54;
+  width: 180px;
+  height:40px;
+  border:none;
+  color: #fff!important;
+  text-decoration: none;
+  font-size: 18px;
 
-.centeralign{
-    text-align: center;
 }
 
-.topspace {
-    padding-top: 60px;
-}
-
-iframe{
-    text-align:center;
-}
-.container h2{
-  color:#f3a022;
-  font-size: 40px;
-  text-align: left;
-  border: 20px;
-}
 .row .mail-list{
   border:none;
   border-bottom: 2px solid white;
@@ -117,19 +97,111 @@ iframe{
   font-size: 20px;
   width: 400px;
 }
-.row .frequent{
-  font-size: 20px;
-  margin-top:20px;
+
+
+
+
+
+/* Sponsorship */
+.sponsor{
+  background-color: white;
+  padding-top: 30px;
+  /* width:100%;
+  margin: 10px; */
 }
 
-.team {
-  padding: 5px;
-  position: relative;
+.sponsor h2{
+  color:#f3a022;
+  font-size: 40px;
+  text-align: center;
+  border: 20px;
+  margin-top: 20px;
 }
+.sponsor .row .sponsor-contents{
+  padding-top:20px;
+  padding-left: 60px;
+  padding-right:60px;
+  margin-top: 10px;
+  line-height: 30px;
+}
+
+.sponsor .row .sponsor-contents i{
+  color: black;
+  font-size: 20px;
+  text-align: center;
+  width: 100%;
+  /* display: inline; */
+}
+.sponsor .row .sponsor-contents .icon-text{
+  display: inline;
+  color: black;
+  font-size: 20px;
+  text-align: center;
+  font-family: "Source Sans Pro",'Play', sans-serif;
+  text-decoration: none;
+}
+
+.sponsor .row .sponsor-contents a:hover{
+  text-decoration: none;
+}
+.sponsor .row .text-center{
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.sponsor .row .sponsor-contents .btn{
+  color:white;
+  font-weight: 400;
+  font-family: "Source Sans Pro",'Play', sans-serif;
+  border: none;
+  margin:0 auto;
+  padding: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+p{
+  font-family: "Source Sans Pro",'Play', sans-serif;
+}
+
+.sponsor img{
+  width:100%;
+  text-align: center;
+  padding-right: 30px;
+
+}
+
+
+
+
+
+/* Team  */
+.teampage{
+  background-color: white;
+  padding-top: 30px;
+  padding: 20px;
+}
+
+
+.teampage h2{
+  color:#f3a022;
+  font-size: 40px;
+  text-align: center;
+  border: 20px;
+  margin-top: 20px;
+}
+
+.teampage .row p{
+  padding: 20px 80px;
+  color: #0a3e54;
+}
+
+
 .team.col-lg-3 {
   padding-right: 8px;
   padding-left: 8px;
 }
+
+
 .team .content {
   position: absolute;
   top: 50%;
@@ -137,7 +209,7 @@ iframe{
   z-index: 1;
 }
 
-.team h3 {
+.team .content h3 {
   text-align: center;
   position: relative;
   top: 0px;
@@ -145,7 +217,7 @@ iframe{
   color: white;
   z-index: 1;
 }
-.team p {
+.team .content p {
   margin: 0;
   position: relative;
   height: 82px;
@@ -160,8 +232,7 @@ iframe{
 .team .background {
   height: 0;
   width: 100%;
-  padding-top: 131.6%;  /* (img-height / img-width * container-width) */
-                        /* (700 / 690 * 100) */
+  padding-top: 131.6%;
 
 }
 .team.engineering .background {
@@ -206,35 +277,72 @@ iframe{
   background: linear-gradient(to right, rgba(28,131,131,.8), rgba(28,131,131,.8) 65%), url('../img/social-media.jpg');
   /* 1C8383 */
 }
+.teampage .apply{
+  width:100%;
+  margin-top: 30px;
+  text-align: center;
+}
 
-.row .btn{
-  margin-top:40px;
-  background-color: #0a3e54;
-  border-color: #0a3e54;
+.teampage .btn-primary{
   width: 180px;
-  height:40px;
+  height: 45px;
+  text-align: center;
+  padding: 10px;
+  margin-top: 30px;
 }
-.row .btn:hover{
-  background-color: #Da2e2e;
-  border:none;
+.teampage .apply a{
+  background-color: #f3a022;
+  color: white;
+  font-weight: 400;
+  border: none;
 }
-.row i{
-  margin-top:20px;
-  color:white;
-}
-.row i:hover{
-  text-decoration:none;
-  opacity:0.7;
+.teampage .apply a:hover {
+  outline: none;
+  background: #f3a022;
 }
 
-.row .diff-teams{
-  padding:20px;
-  margin:20px;
-  height:370px;
+
+
+
+/* faq */
+
+.faq{
+  background-color: white;
+  margin-top:40px;
+  /* padding-top: 30px; */
+  padding: 20px;
 }
+
+.faq h2{
+  color:#f3a022;
+  font-size: 40px;
+  text-align: center;
+  border: 20px;
+  margin-top: 20px;
+  font-weight: 800;
+}
+
+.faq h3{
+  color:#f3a022;
+  font-size: 30px;
+  text-align: center;
+  border: 20px;
+  margin-top: 10px;
+}
+
+.faq .row ol{
+  text-align: left;
+  color: #0a3e54;
+  font-size: 20px;
+  padding: 30px;
+  line-height: 40px;
+}
+
+
+/* Footer */
 
 .footer {
-  margin-top: 30px;
+   /* margin-top: 30px; */
    padding:30px;
    position: relative;
    height:80px;

@@ -8,20 +8,22 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 <link rel="shortcut icon" href="img/favicon.png">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet prefetch" href="https://unpkg.com/flickity@1/dist/flickity.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Roboto|Source+Sans+Pro|Play" rel="stylesheet">
 </head>
 <body>
-<div class="header-background">
-    <img src="img/madhacks-mini.jpg">
+  <div class="header-background" id="home">
+  <img src="img/madhacks-mini.jpg">
   </div>
-<div class="parallax-effect mad">
-<div class="container">
-  <div class="row">
-      <div class="col-lg-6">
-        <a class="home" href="#home"> Mad Hacks</a>
-      </div>
-      <div class="col-lg-6 hidden-xs">
-        <p class="text-right">
+  <div class="parallax-effect mad">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <a class="home" href="#home"> Mad Hacks</a>
+        </div>
+        <div class="col-lg-6 hidden-xs">
+          <p class="text-right right-nav">
           <a class="others" href="#sponsor"> Sponsor</a> &nbsp &nbsp
           <a class="others" href="#team">Team </a>&nbsp &nbsp
           <a class="others" href="#faq">F.A.Q</a>&nbsp &nbsp
@@ -30,53 +32,80 @@
       </div>
     </div>
     <div class="row">
-        <!-- Begin MailChimp Signup Form -->
-        <div class="emaillist">
-            <div id="mc_embed_signup">
-            <form action="https://madhacks.us18.list-manage.com/subscribe/post?u=7eb01ac984fa07910d45bddab&amp;id=e7e712ff29" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+      <!-- Begin MailChimp Signup Form -->
+      <div class="emaillist">
+        <div id="mc_embed_signup">
+          <form action="https://madhacks.us18.list-manage.com/subscribe/post?u=7eb01ac984fa07910d45bddab&amp;id=e7e712ff29" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
             <div id="mc_embed_signup_scroll">
-            <h3 id="big">Subscribe to be the first to register</h3><br />
-            <div class="mc-field-group">
-            	<input class= "mail-list" type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+              <h3 id="big">Subscribe to be the first to register</h3><br />
+              <div class="mc-field-group">
+              	<input class= "mail-list" type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+              </div>
+  	          <div id="mce-responses" class="clear">
+          		<div class="response" id="mce-error-response" style="display:none"></div>
+          		<div class="response" id="mce-success-response" style="display:none"></div>
+  	          </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                <input type="text" name="b_7eb01ac984fa07910d45bddab_e7e712ff29" tabindex="-1" value="">
+              </div>
+              <div class="clear">
+                <input type="submit" value="Subscribe" name="Subscribe" id="mc-embedded-subscribe" class="btn btn-primary">
+              </div>
             </div>
-            	<div id="mce-responses" class="clear">
-            		<div class="response" id="mce-error-response" style="display:none"></div>
-            		<div class="response" id="mce-success-response" style="display:none"></div>
-            	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                  <input type="text" name="b_7eb01ac984fa07910d45bddab_e7e712ff29" tabindex="-1" value="">
-                </div>
-                <div class="clear">
-                  <input type="submit" value="Subscribe" name="Subscribe" id="mc-embedded-subscribe" class="btn btn-primary">
-                </div>
-                </div>
-            </form>
-          </div>
-        </div>
+        </form>
+      </div>
+     </div>
     </div>
   </div>
 </div>
 
 <div class="main-content">
-<div class="container centeralign topspace" id="sponsor">
-  <h2>Sponsor and inspire the new generation of hackers</h2>
-  <div class="row">
-    <p class="text-left">
-      Each year, our sponsors help us unite 1,000 emerging developers, designers, and builders.  Our sponsors make it possible for hackers to build something they're proud of.
-      <br />
-      Interested in sponsoring? Email us at team@madhacks.org <br />
-      <a href="sponsor.pdf"> Check out our sponsor tier </a>
-    </p>
-  </div>
-  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/hu7BeN32lrw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<!-- Sponsorship  -->
+<div class="sponsor container-fluid" id="sponsor">
+    <div class="row">
+      <div class="col">
+         <h2>SPONSOR & INSPIRE</h2>
+       </div>
+      <div class="col">  </div>
+    </div>
+    <div class="row">
+      <div class="col sponsor-contents">
+        <p>
+          &nbsp &nbsp  Each year, our sponsors help us unite students from all across from the United States and Canada
+          for a special weekend of building, designing, and making the impoosible. Our hackers have a unique
+          opportunity to network with our sponsors while our sponsors have a chance to meet some of the most
+          passionate programmers and designers, provide API access to our hackers, and inspire them to go
+          beyond the ordinary.
+          <br />
+          &nbsp &nbsp Together, we can build a community of the hacking culture. If you are interested in sponsoring our event,
+          check out our sponsor tiers. You can also connect with us if you have any more questions.
+        </p>
+        </br>
+        <p class="text-center">
+          <a class="btn btn-primary"> Speak with a Student Rep </a> &nbsp &nbsp
+          <a class="btn btn-primary"> Sponsorship Tiers </a>
+          <a href="https://youtu.be/hu7BeN32lrw"><i class="far fa-play-circle"></i><span class="icon-text">&nbsp &nbsp 2018 Mini Recap Video</span> </a>
+        </p>
+      </div>
+      <div class="col image-col">
+        <img src="3.jpg" />
+      </div>
+    </div>
+   <br />
+  <!-- Interested in sponsoring? Email us at team@madhacks.org <br /> -->
+  <!-- <a href="sponsor.pdf"> Check out our sponsor tier </a> -->
+  </p>
+  <!-- </div> -->
+  <!-- <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/hu7BeN32lrw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
 </div>
 
-<div class="container centeralign topspace" id = "team">
+<!-- Team  -->
+<div class="teampage container" id = "team">
   <h2>Join the Madhacks Team</h2>
-  <div class="row">
-    <p class="text-left">
-      Madhacks is an annual hackathon hosted by UW Madison. We work year round to put on a great event in the Fall. With over 500 hackers in attendance from around the world, we strive to create an incredible experience for all those who attend, and witness the culmination of our hard work in the outstanding projects developed at the hackathon.
-      From designing advertisements to securing sponsors, it’s an incredible experience.
+  <div class="row team-page">
+    <p>Madhacks is a twice-annual hackathon hosted in University of Wisconsin Madison. We gather hundreds of hackers around the globe for a special weekend of hacking.
+      Madhacks is a twice-annual hackathon hosted in University of Wisconsin Madison. We gather hundreds of hackers around the globe for a special weekend of hacking.
+      Madhacks is a twice-annual hackathon hosted in University of Wisconsin Madison. We gather hundreds of hackers around the globe for a special weekend of hacking.
     </p>
   </div>
   <div class="row">
@@ -102,34 +131,41 @@
       <div class="background"></div>
     </div>
     <div class="team engineering col-lg-3 col-md-6 col-sm-6">
-        <div class="content">
-          <h3>Engineering</h3>
-          <p>Join our engineering team and you will have the time of your life.</p>
-        </div>
-        <div class="background"></div>
+      <div class="content">
+        <h3>Engineering</h3>
+        <p>Join our engineering team and you will have the time of your life.</p>
       </div>
+      <div class="background"></div>
+    </div>
   </div>
-  <div class="row" style="text-align:center">
-      <button style="text-align:center" class="btn btn-primary" type="submit">Apply!</button>
-  </div>
+    <div class="apply">
+      <a  href="https://madhacks-2018.typeform.com/to/rXdMT8" class="btn btn-primary">Apply Now!</a>
+    </div>
+
 </div>
-<div class="container centeralign topspace" id ="faq">
-  <h2>Team Frequently Asked Questions </h2>
+<!-- Frequently Asked Questions -->
+<div class="container faq" id ="faq">
+  <h2>  Why Madhacks? </h2>
+  <h3> Frequently Asked Questions </h3>
   <div class="row">
-    <p class="text-left frequent">
-      <strong> What is Madhacks? </strong><br />
-      Madhacks is Wisconsin biggest student-run hackathon. Every year, we bring together hackers all across United States and Canada for a special weekend of coding, networking and fun.   <br />
-      <strong> Do I need to be a computer science major? </strong><br /> Absolutely Not! We are hiring students from all majors. You do not need to have any hackathon experience either. If you are passionate about hackathon or event planning, don't hesitant to apply.  <br />
-      <strong> How much time commitment? </strong><br /> We held weekly meeting for our team members, and usually we don't get busy until the week before the event. So the time commitment is very low.<br/>
-      <strong> Who can register? </strong><br /> Any UW-Madison students are eligible to apply. We take students from all majors! <br />
-    </p>
+    <ol>
+      <li><strong>What is a hackathon?</strong></li>Madhacks is Wisconsin biggest student-run hackathon. Every year, we bring together hackers all across United States and Canada for a special weekend of coding, networking and fun.   <br /><br />
+      <li><strong>Do I need to be a computer science major? </strong></li>Absolutely Not! We are hiring students from all majors. You do not need to have any hackathon experience either. If you are passionate about hackathon or event planning, don't hesitant to apply.    <br /><br />
+      <li><strong>How much time commitment? </strong></li>We held weekly meeting for our team members, and usually we don't get busy until the week before the event. So the time commitment is very low.  <br /><br />
+      <li><strong>Who can apply?</strong></li>Any UW-Madison students are eligible to apply. We take students from all majors!   <br /><br />
+    </ol>
   </div>
 </div>
 </div>
-</div>
+<!-- </div> -->
 <div class="footer">
   <p> Created by @Madhacks</p>
 </div>
 
+
+<script>
+</script>
 </body>
+
+
 </html>
