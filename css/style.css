@@ -76,6 +76,91 @@ iframe{
   margin-top:20px;
 }
 
+.team {
+  padding: 5px;
+  position: relative;
+}
+.team.col-lg-3 {
+  padding-right: 8px;
+  padding-left: 8px;
+}
+.team .content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.team h3 {
+  text-align: center;
+  position: relative;
+  top: 0px;
+  right:0; left: 0;
+  color: white;
+  z-index: 1;
+}
+.team p {
+  margin: 0;
+  position: relative;
+  height: 82px;
+  top: 10px;
+  z-index: 1;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  padding-left: 25px; padding-right: 25px; 
+}
+
+.team .background {
+  height: 0;
+  width: 100%;
+  padding-top: 131.6%;  /* (img-height / img-width * container-width) */
+                        /* (700 / 690 * 100) */
+  
+}
+.team.engineering .background {
+  background: url(../img/engineering.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.team.sponsorship .background {
+  background: url(../img/sponsorship.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.team.logistics .background {
+  background: url(../img/logistics.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.team.marketing .background {
+  background: url(../img/social-media.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.team:hover .background {
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+  filter: brightness(1);
+  position: relative;
+  top: 5px;
+  transition: 0.1s all;
+}
+.team:hover .background {
+  background: linear-gradient(to right, rgba(10,62,84,.8), rgba(10,62,84,.8) 65%), url('../img/engineering.jpg');
+}
+.team.sponsorship:hover .background {
+   background: linear-gradient(to right, rgba(249,105,14,.8), rgba(249,105,14,.8) 65%), url('../img/sponsorship.jpg');
+}
+.team.logistics:hover .background {
+  background: linear-gradient(to right, rgba(243,160,34,.8), rgba(243,160,34,.8) 65%), url('../img/logistics.jpg');
+}
+.team.marketing:hover .background {
+  background: linear-gradient(to right, rgba(28,131,131,.8), rgba(28,131,131,.8) 65%), url('../img/social-media.jpg');
+  /* 1C8383 */  
+}
+
 .row .btn{
   margin-top:40px;
   background-color: #0a3e54;
@@ -85,8 +170,6 @@ iframe{
   background-color: #Da2e2e;
   border-color:#da2e2e
 }
-
-
 .row i{
   margin-top:20px;
   color:white;
@@ -96,46 +179,11 @@ iframe{
   opacity:0.7;
 }
 
-
 .row .diff-teams{
   padding:20px;
   margin:20px;
   height:370px;
 }
-
-.row .engineering{
-  background-image: url("../img/engineering.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.row .engineering:hover{
-  opacity:0.5;
-}
-
-.row .sponsorship{
-  background-image: url("../img/sponsorship.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-.row .logistics{
-  background-image: url("../img/logistics.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-.row .marketing{
-  background-image: url("../img/social-media.jpeg");
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-.row .diff-teams h3{
-  color:white;
-}
-
-
-
-
-
 
 .footer {
   margin-top: 30px;
@@ -151,4 +199,15 @@ iframe{
 }
 .footer p{
   color:white;
+}
+
+@media (max-width: 991px) {
+  .team .background {
+    padding-top: 0;
+    background-size: cover !important;
+    height: 250px !important;
+  }
+  .team:hover .background {
+    background-size: cover !important;
+  }
 }
