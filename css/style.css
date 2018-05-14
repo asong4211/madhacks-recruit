@@ -6,51 +6,18 @@ p {
   color:#0a3e54;
 }
 .mad {
-    -webkit-filter: opacity(100%); /* Safari */
-    filter: opacity(100%);
+    -webkit-filter: opacity(70%); /* Safari */
+    filter: opacity(70%);
 }
-h3#big {
-  font-size: 44px;
-  font-weight: 600;
-}
-.btn-primary {
-  background-color: #f3a022 !important;
-}
-.btn-primary:hover {
-  outline: none !important;
-}
-
 .parallax-effect {
-    /* background: url(https://raw.githubusercontent.com/calhacks/recruiting-sp18/master/css/../img/team.jpg) no-repeat bottom fixed; */
-    /* filter: brightness(0.5); */
+    background-image: url('../img/madhacks-mini.jpg');
     height: 70%;
-    z-index: 1;
-    
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 0;
 }
-.header-background {
-  position: fixed; top: 0;
-  height: 70%;
-  width: 100%;
-  /* background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 0;
-  filter: brightness(0.4);
-  z-index: -1; */
-  z-index: -1;
-  filter: brightness(0.5);
-}
-.header-background img {
-  width: 100%;
-  height: 100%;
-}
-
-.main-content {
-  background-color: white;
-  width: 100%;
-}
-
 .parallax-effect .row{
     padding-top: 40px;
 }
@@ -97,7 +64,7 @@ h3#big {
 }
 
 .topspace {
-    padding-top: 60px;
+    margin-top: 60px;
 }
 
 iframe{
