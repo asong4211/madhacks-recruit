@@ -6,18 +6,51 @@ p {
   color:#0a3e54;
 }
 .mad {
-    -webkit-filter: opacity(70%); /* Safari */
-    filter: opacity(70%);
+    -webkit-filter: opacity(100%); /* Safari */
+    filter: opacity(100%);
 }
+h3#big {
+  font-size: 44px;
+  font-weight: 600;
+}
+.btn-primary {
+  background-color: #f3a022 !important;
+}
+.btn-primary:hover {
+  outline: none !important;
+}
+
 .parallax-effect {
-    background-image: url('../img/madhacks-mini.jpg');
+    /* background: url(https://raw.githubusercontent.com/calhacks/recruiting-sp18/master/css/../img/team.jpg) no-repeat bottom fixed; */
+    /* filter: brightness(0.5); */
     height: 70%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 0;
+    z-index: 1;
+
 }
+.header-background {
+  position: fixed; top: 0;
+  height: 70%;
+  width: 100%;
+  /* background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 0;
+  filter: brightness(0.4);
+  z-index: -1; */
+  z-index: -1;
+  filter: brightness(0.5);
+}
+.header-background img {
+  width: 100%;
+  height: 100%;
+}
+
+.main-content {
+  background-color: white;
+  width: 100%;
+}
+
 .parallax-effect .row{
     padding-top: 40px;
 }
@@ -64,7 +97,7 @@ p {
 }
 
 .topspace {
-    margin-top: 60px;
+    padding-top: 60px;
 }
 
 iframe{
@@ -121,7 +154,7 @@ iframe{
   font-size: 18px;
   font-weight: 600;
   color: white;
-  padding-left: 25px; padding-right: 25px; 
+  padding-left: 25px; padding-right: 25px;
 }
 
 .team .background {
@@ -129,7 +162,7 @@ iframe{
   width: 100%;
   padding-top: 131.6%;  /* (img-height / img-width * container-width) */
                         /* (700 / 690 * 100) */
-  
+
 }
 .team.engineering .background {
   background: url(../img/engineering.jpg);
@@ -171,17 +204,19 @@ iframe{
 }
 .team.marketing:hover .background {
   background: linear-gradient(to right, rgba(28,131,131,.8), rgba(28,131,131,.8) 65%), url('../img/social-media.jpg');
-  /* 1C8383 */  
+  /* 1C8383 */
 }
 
 .row .btn{
   margin-top:40px;
   background-color: #0a3e54;
-  border-color: #0a3e54
+  border-color: #0a3e54;
+  width: 180px;
+  height:40px;
 }
 .row .btn:hover{
   background-color: #Da2e2e;
-  border-color:#da2e2e
+  border:none;
 }
 .row i{
   margin-top:20px;
