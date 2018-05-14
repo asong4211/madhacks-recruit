@@ -46,6 +46,19 @@ p {
     padding: 50px;
 
 }
+
+.container .row form{
+  background:none;
+  text-align:center;
+  padding: 30px;
+  color:white;
+  font-size: 20px;
+  margin: 0 auto;
+}
+.container .row .emaillist{
+  width:100%;
+}
+
 .centeralign{
     text-align: center;
 }
@@ -67,7 +80,7 @@ iframe{
   border:none;
   border-bottom: 2px solid white;
   background-color: transparent;
-  color:#da2e2e;
+  color:white;
   font-size: 20px;
   width: 400px;
 }
