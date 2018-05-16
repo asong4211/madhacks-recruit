@@ -11,9 +11,31 @@ p {
     -webkit-filter: opacity(100%); /* Safari */
     filter: opacity(100%);
 }
-h3#big {
+h1#big {
   font-size: 44px;
   font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.home {
+  padding-left: 10px;
+  font-size: 30px;
+  color:white;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: 'Raleway', sans-serif;
+}
+
+.home:before {
+  position: relative;
+  top: 13px;
+  left: -10px;
+  background-image: url('../img/mh.png');
+  background-size: 60px 52px;
+  display: inline-block;
+  width: 60px; 
+  height: 52px;
+  content:"";
 }
 
 .parallax-effect {
@@ -29,7 +51,6 @@ h3#big {
   filter: brightness(0.5);
 }
 .header-background img {
-  width: 100%;
   height: 100%;
 }
 
@@ -41,12 +62,6 @@ h3#big {
 .parallax-effect .row{
     padding-top: 40px;
 }
-.parallax-effect .home{
-    font-size: 30px;
-    color:white;
-    text-decoration: none;
-    font-weight: 700;
-}
 
 .parallax-effect .others{
     font-size: 20px;
@@ -56,9 +71,24 @@ h3#big {
 
 .parallax-effect a:hover{
     text-decoration: none;
-    border-bottom: 3px solid white;
+    color: white;
 }
-
+#mc_embed_signup input#mce-EMAIL {
+  border: 1px solid #e8e8e8;
+  border-radius: 18px;
+  padding-left: 20px;
+}
+#mc_embed_signup input#mce-EMAIL::after {
+  width: 50px;
+  border-radius: 18px;
+  background-color: red;
+}
+#mc_embed_signup input:focus {
+  outline: none;
+}
+.mc-field-group {
+  padding-top: 30px;
+}
 .parallax-effect .row .text-center{
     text-align:center;
     color:white;
@@ -77,17 +107,17 @@ h3#big {
 
 .container .row .emaillist{
   width:100%;
+  margin-top: 80px;
 }
 .row .clear input{
   margin-top:40px;
-  background-color: #0a3e54;
-  border-color: #0a3e54;
-  width: 180px;
-  height:40px;
+  background-color: #da2e2e;
+  border-color: #da2e2e;
   border:none;
   color: #fff!important;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 24px;
+  padding: 6px 22px 6px 22px;
 
 }
 
@@ -154,7 +184,6 @@ h3#big {
   padding-right: 40px;
 }
 .sponsor .row .sponsor-contents .btn{
-  color:white;
   font-weight: 600;
   font-size: 17px;
   font-family: "Source Sans Pro",'Play', sans-serif;
@@ -163,7 +192,14 @@ h3#big {
   padding: 10px;
   margin-left: 20px;
   margin-right: 20px;
+}
+.sponsor .row .sponsor-contents .btn-primary {
   background-color: #f3a022;
+  color:white;
+  margin-bottom: 20px;
+}
+.sponsor .row .sponsor-contents .btn-link {
+  /* text-decoration: underline; */
 }
 
 
