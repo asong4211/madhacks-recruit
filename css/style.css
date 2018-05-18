@@ -58,6 +58,8 @@ h1#big {
   background-color: white;
   width: 100%;
   position: relative;
+  /* padding-right:15px; */
+  overflow: hidden;
 }
 
 .parallax-effect .row{
@@ -67,6 +69,8 @@ h1#big {
 .parallax-effect .right-nav{
   text-align: right;
   margin-top: 33px;
+  text-transform: uppercase;
+  font-weight:600;
 }
 
 .parallax-effect .others{
@@ -260,20 +264,25 @@ h1#big {
 
 
 /* Team  */
+svg{
+  height: 120px;
+  width:100%;
+}
 
 .teampage{
   background-color: #f2f2f2;
-  padding-top: 30px;
-  margin-top: 150px;
+  padding-top: 50px;
+  margin-top: -6px;
+
 }
 
 
 .teampage h2{
   color:#0a3e54;
-  font-size: 40px;
+  font-size: 3vw;
   text-align: center;
   border: 20px;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   font-weight: 800;
   text-transform: uppercase;
 }
@@ -400,30 +409,36 @@ padding: 10px 50px;
   text-decoration: none;
 }
 
-
+.poly{
+  background-color:#f2f2f2;
+}
 
 
 /* faq */
 
 .faq{
   background-color: white;
-  margin-top:70px;
-  /* padding-top: 30px; */
-  padding: 20px;
+  margin-top:-6px;
+  padding: 80px;
+  width:100%;
+
+
+
 }
 
 .faq h2{
   color:#0a3e54;
-  font-size: 40px;
+  font-size: 3vw;
   text-align: center;
   border: 20px;
   margin-top: 20px;
   font-weight: 800;
+  text-transform: uppercase;
 }
 
 .faq h3{
   color:#0a3e54;
-  font-size: 30px;
+  font-size: 2.5vw;
   text-align: center;
   border: 20px;
   margin-top: 10px;
@@ -432,9 +447,9 @@ padding: 10px 50px;
 .faq .row ol{
   text-align: left;
   color: black;
-  font-size: 20px;
+  font-size: 1.4vw;
   padding: 30px;
-  line-height: 40px;
+  line-height: 30px;
 }
 
 
