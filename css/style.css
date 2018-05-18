@@ -33,7 +33,7 @@ h1#big {
   background-image: url('../img/mh.png');
   background-size: 60px 52px;
   display: inline-block;
-  width: 60px; 
+  width: 60px;
   height: 52px;
   content:"";
 }
@@ -63,6 +63,11 @@ h1#big {
     padding-top: 40px;
 }
 
+.parallax-effect .right-nav{
+  text-align: right;
+  margin-top: 33px;
+}
+
 .parallax-effect .others{
     font-size: 20px;
     color:white;
@@ -77,6 +82,9 @@ h1#big {
   border: 1px solid #e8e8e8;
   border-radius: 18px;
   padding-left: 20px;
+  margin-right: -40px;
+  padding-top: 4px;
+  padding-bottom: 8px;
 }
 #mc_embed_signup input#mce-EMAIL::after {
   width: 50px;
@@ -109,16 +117,14 @@ h1#big {
   width:100%;
   margin-top: 80px;
 }
-.row .clear input{
-  margin-top:40px;
+#mc-embedded-subscribe{
   background-color: #da2e2e;
-  border-color: #da2e2e;
-  border:none;
   color: #fff!important;
   text-decoration: none;
-  font-size: 24px;
+  font-size: 20px;
   padding: 6px 22px 6px 22px;
-
+  border-radius: 18px;
+  border:1.5px solid #e8e8e8;
 }
 
 .row .mail-list{
@@ -129,8 +135,6 @@ h1#big {
   font-size: 20px;
   width: 400px;
 }
-
-
 
 /* Sponsorship */
 .sponsor{
@@ -143,11 +147,17 @@ h1#big {
 
 .sponsor h2{
   color:#0a3e54;
-  font-size: 40px;
+  font-size: 3em;
   text-align: center;
   border: 20px;
-  margin-top: 20px;
+  margin-top: 50px;
   font-weight: 800
+}
+
+.sponsor .row .col p{
+  font-size: 1em;
+  line-height: 1.8em;
+  text-indent: 30px;
 }
 .sponsor .row .sponsor-contents{
   padding-top:20px;
@@ -184,63 +194,60 @@ h1#big {
   padding-right: 40px;
 }
 .sponsor .row .sponsor-contents .btn{
-  font-weight: 600;
-  font-size: 17px;
+  font-weight: 800;
+  font-size: 22px;
   font-family: "Source Sans Pro",'Play', sans-serif;
   border: none;
   margin:0 auto;
   padding: 10px;
   margin-left: 20px;
   margin-right: 20px;
+  text-align:center;
 }
 .sponsor .row .sponsor-contents .btn-primary {
   background-color: #f3a022;
   color:white;
   margin-bottom: 20px;
 }
-.sponsor .row .sponsor-contents .btn-link {
-  /* text-decoration: underline; */
-}
 
-
-p{
-  font-family: "Source Sans Pro",'Play', sans-serif;
-}
 .sponsor .image-col{
-  position:relative;
+  position:relative!important;
 }
 .sponsor .background-image{
   width:100%;
   text-align: center;
   padding-right: 30px;
   position:relative;
-  top:0;
-  left:0;
   filter:grayscale(0.9);
+  display:block;
 }
 
-.sponsor .overlay{
-  /* display:block; */
+.sponsor .row .image-col .overlay{
   position:absolute;
-  top:135px;
-  left: 260px;
-  font-size: 70px;
-  color: white;
-  /* text-align: center; */
+  top: 35%;
+  text-align: center;
+  width: 100%;
 }
 
-.sponsor .overlay:hover{
-  transform: scale(1.3);
+.sponsor .overlay i{
+  color:white;
+  font-size: 88px;
+  display: inline-table;
+  vertical-align:middle;
+
+}
+.sponsor .overlay i:hover{
+  transform: scale(1.1);
 }
 .sponsor h3{
-  position:absolute;
-  top:220px;
-  /* left:160px; */
+  display: inline-table;
+  vertical-align:middle;
   color: white;
-  font-size: 30px;
+  font-size: 35px;
   font-weight: 900;
   text-align:center;
-  width:100%;
+  /* width:100%; */
+  letter-spacing: 1px;
 }
 
 
@@ -250,6 +257,7 @@ p{
   background-color: white;
   padding-top: 30px;
   padding: 20px;
+  margin-top: 150px;
 }
 
 
@@ -386,7 +394,7 @@ p{
 
 .faq{
   background-color: white;
-  margin-top:40px;
+  margin-top:70px;
   /* padding-top: 30px; */
   padding: 20px;
 }
