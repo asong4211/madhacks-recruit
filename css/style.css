@@ -124,7 +124,7 @@ h1#big {
   font-size: 20px;
   padding: 6px 22px 6px 22px;
   border-radius: 18px;
-  border:1.5px solid #e8e8e8;
+  border:1px solid #e8e8e8;
 }
 
 .row .mail-list{
@@ -155,7 +155,7 @@ h1#big {
 }
 
 .sponsor .row .col p{
-  font-size: 1em;
+  font-size: 1.4vw;
   line-height: 1.8em;
   text-indent: 30px;
 }
@@ -203,6 +203,7 @@ h1#big {
   margin-left: 20px;
   margin-right: 20px;
   text-align:center;
+  display: inline;
 }
 .sponsor .row .sponsor-contents .btn-primary {
   background-color: #f3a022;
@@ -210,8 +211,17 @@ h1#big {
   margin-bottom: 20px;
 }
 
+.sponsor .row .sponsor-contents .btn-link{
+  color:#1e87f0;
+}
+.sponsor .row .sponsor-contents .btn-link:hover{
+  color:#0f6ecd;
+}
+
 .sponsor .image-col{
   position:relative!important;
+  padding: 70px 0 !important;
+  text-align:center;
 }
 .sponsor .background-image{
   width:100%;
@@ -246,7 +256,6 @@ h1#big {
   font-size: 35px;
   font-weight: 900;
   text-align:center;
-  /* width:100%; */
   letter-spacing: 1px;
 }
 
