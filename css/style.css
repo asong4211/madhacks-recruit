@@ -39,13 +39,13 @@ h1#big {
 }
 
 .parallax-effect {
-    height: 90%;
+    height: 100%;
     z-index: 1;
 
 }
 .header-background {
   position: fixed; top: 0;
-  height: 90%;
+  height: 100%;
   width: 100%;
   z-index: -1;
   filter: brightness(0.5);
