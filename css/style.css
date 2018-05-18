@@ -57,6 +57,7 @@ h1#big {
 .main-content {
   background-color: white;
   width: 100%;
+  position: relative;
 }
 
 .parallax-effect .row{
@@ -140,9 +141,6 @@ h1#big {
 .sponsor{
   background-color: white;
   padding-top: 60px;
-  /* margin-top: 40px; */
-  /* width:100%;
-  margin: 10px; */
 }
 
 .sponsor h2{
@@ -241,7 +239,7 @@ h1#big {
 
 .sponsor .overlay i{
   color:white;
-  font-size: 88px;
+  font-size: 8vw;
   display: inline-table;
   vertical-align:middle;
 
@@ -262,10 +260,10 @@ h1#big {
 
 
 /* Team  */
+
 .teampage{
-  background-color: white;
+  background-color: #f2f2f2;
   padding-top: 30px;
-  padding: 20px;
   margin-top: 150px;
 }
 
@@ -277,11 +275,16 @@ h1#big {
   border: 20px;
   margin-top: 20px;
   font-weight: 800;
+  text-transform: uppercase;
 }
 
+.teampage .row{
+padding: 10px 50px;
+}
 .teampage .row p{
   padding: 20px 80px;
   color: #0a3e54;
+  font-size: 1.4vw;
 }
 
 
@@ -312,7 +315,7 @@ h1#big {
   height: 82px;
   top: 10px;
   z-index: 1;
-  font-size: 18px;
+  font-size: 1.4vw;
   font-weight: 600;
   color: white;
   padding-left: 25px; padding-right: 25px;
@@ -372,7 +375,8 @@ h1#big {
 }
 .teampage .apply{
   width:100%;
-  margin-top: 30px;
+  margin-top: 45px;
+  padding-bottom: 40px;
   text-align: center;
 }
 
