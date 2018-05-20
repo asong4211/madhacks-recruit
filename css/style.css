@@ -35,7 +35,7 @@ p {
     background-attachment: fixed;
 }
 .whole_nav{
-    padding:50px 30px;
+    padding:50px 80px;
 }
 .whole_nav {
     z-index: 1;
@@ -45,11 +45,15 @@ p {
 }
 .logo {
   padding-left:10px;
-  font-size: 2em;
+  font-size: 200%;
   color:white;
   text-decoration: none;
   font-weight: 700;
   font-family: 'Raleway', sans-serif;
+}
+.logo:hover{
+    text-decoration: underline;
+    color:white;
 }
 .logo:before {
   position: relative;
@@ -72,9 +76,10 @@ p {
 
 #menu{
     display:hidden;
-    width:40px;
-    height:40px;
+    width:50px;
+    height:50px;
     background:url("../img/nav.png") center;
+    background-size: contain;
 }
 a:hover#menu{
     border-radius:4px 4px 0 0;
@@ -94,7 +99,7 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    text-decoration: none;
+    text-decoration: underline;
     color: white;
 }
 
@@ -102,7 +107,7 @@ nav ul li a:hover{
 #mc_embed_signup{
   width:100%;
   margin-top: 10%;
-   z-index:1; 
+  z-index:1; 
 }
 #mc_embed_signup .mc-field-group{
   padding-top:40px;
@@ -151,112 +156,112 @@ h1#join {
   border:1px solid #e8e8e8;
 }
 
-
-
-
-
-
-
 .main-content {
   background-color: white;
   width: 100%;
   position: relative;
   overflow: hidden;
 }
+
+
+
 /* Sponsorship */
 .sponsor{
   background-color: white;
-  padding-top: 60px;
+  padding:3%;
+  margin: 5% 0 5% 0;
+}
+.sponsor-text{
+    float:left;
+    width:50%;
 }
 
 .sponsor h2{
   color:#0a3e54;
-  font-size: 3em;
+  font-size: 250%;
   text-align: center;
   border: 20px;
-  margin-top: 50px;
+  margin-top: 5%;
   font-weight: 800
 }
 
-.sponsor .row .col p{
-  font-size: 1.2em;
+.sponsor p{
+  font-size: 120%;
   line-height: 1.8em;
   text-indent: 30px;
 }
-.sponsor .row .sponsor-contents{
-  padding-top:60px;
-  padding-left: 60px;
-  padding-right:60px;
-  margin-top: 10px;
+.sponsor .sponsor-text .sponsor-contents{
   line-height: 30px;
+  padding: 30px;
+}
+.sponsor .sponsor-button{
+    text-align:center;
+    clear:both
+}
+.sponsor .sponsor-contents .btn{
+  font-weight: 800;
+  font-size: 120%;
+  font-family: "Source Sans Pro",'Play', sans-serif;
+  border: none;
+  padding: 10px;
+  text-align:center;
+  display: inline;
+}
+.sponsor .sponsor-contents .btn-primary {
+  background-color: #f3a022;
+  color:white;
+ margin-right: 20px;
 }
 
-.sponsor .row .sponsor-contents i{
+.sponsor .sponsor-contents .btn-link{
+  color:#1e87f0;
+    margin-left: 20px;
+    display:inline;
+}
+.sponsor.sponsor-contents .btn-link:hover{
+  color:#0f6ecd;
+}
+
+#mobile-contact{
+    display:hidden;
+}
+
+.sponsor .sponsor-contents i{
   color: black;
   font-size: 20px;
   text-align: center;
   width: 100%;
-  /* display: inline; */
-}
-.sponsor .row .col h3{
-  display: inline;
-  color: white;
-  font-size: 3.5vw;;
-  text-align: center;
-  font-family: "Source Sans Pro",'Play', sans-serif;
-  text-decoration: none;
-  flex:left;
 }
 
-.sponsor .row .sponsor-contents a:hover{
+.sponsor  a:hover{
   text-decoration: none;
 }
 
-
-.sponsor .row .text-center{
-  padding-left: 40px;
-  padding-right: 40px;
-}
-.sponsor .row .sponsor-contents .btn{
-  font-weight: 800;
-  font-size: 1.2em;
-  font-family: "Source Sans Pro",'Play', sans-serif;
-  border: none;
-  margin:0 auto;
-  padding: 10px;
-  margin-left: 20px;
-  margin-right: 20px;
-  text-align:center;
-  display: inline;
-}
-.sponsor .row .sponsor-contents .btn-primary {
-  background-color: #f3a022;
-  color:white;
-  margin-bottom: 20px;
-}
-
-.sponsor .row .sponsor-contents .btn-link{
-  color:#1e87f0;
-}
-.sponsor .row .sponsor-contents .btn-link:hover{
-  color:#0f6ecd;
-}
 
 .sponsor .image-col{
-  position:relative!important;
-  padding: 70px 0 !important;
+  position:relative;
+  padding: 30px;
   text-align:center;
+  float:left;
+   width:50%;
+    
 }
 .sponsor .background-image{
   width:100%;
   text-align: center;
-  padding-right: 30px;
   position:relative;
-  filter:grayscale(0.9);
+  filter:grayscale(0.6);
   display:block;
+  border:1px solid #f3f3f3;
+    border-radius:4px;
+    padding:5px;
+    border-style:groove;
+    border-width:2px;
+    margin:0 auto;
 }
 
-.sponsor .row .image-col .overlay{
+
+.sponsor  .image-col .overlay{
   position:absolute;
   top: 35%;
   text-align: center;
@@ -301,7 +306,7 @@ svg{
 
 .teampage h2{
   color:#0a3e54;
-  font-size: 2.5em;
+  font-size: 250%;
   text-align: center;
   border: 20px;
   /* margin-top: 20px; */
@@ -309,14 +314,12 @@ svg{
   text-transform: uppercase;
 }
 
-.teampage .row{
-  padding: 10px 20px;
-}
 .teampage .team-page p{
-  padding: 20px 40px;
+  padding: 10px 10px;
   color: #0a3e54;
-  font-size: 1.5em;
+  font-size: 120%;
   text-indent: 40px;
+  text-align: justify;
 }
 
 
@@ -341,7 +344,7 @@ svg{
   color: white;
   z-index: 1;
   font-weight: 700;
-  font-size:2em;
+  font-size:200%;
 }
 .team .content p {
   margin: 0;
@@ -349,7 +352,7 @@ svg{
   height: 82px;
   top: 10px;
   z-index: 1;
-  font-size: 1.3em;
+  font-size: 100%;
   font-weight: 600;
   color: white;
   padding-left: 15px;
@@ -447,14 +450,11 @@ svg{
   margin-top:-7px;
   padding: 80px;
   width:100%;
-
-
-
 }
 
 .faq h2{
   color:#0a3e54;
-  font-size: 2.5em;
+  font-size: 250%;
   text-align: center;
   border: 20px;
   margin-top: 20px;
@@ -464,7 +464,7 @@ svg{
 
 .faq h3{
   color:#0a3e54;
-  font-size: 2em;;
+  font-size: 200%;
   text-align: center;
   border: 20px;
   margin-top: 10px;
@@ -473,7 +473,7 @@ svg{
 .faq .row ol{
   text-align: left;
   color: black;
-  font-size: 1.2em;
+  font-size: 120%;
   padding: 30px;
   line-height: 30px;
 }
@@ -485,7 +485,7 @@ svg{
    /* margin-top: 30px; */
    padding:30px;
    position: relative;
-   height:80px;
+   height:10%;
    left: 0;
    bottom: 0;
    width: 100%;
@@ -498,7 +498,7 @@ svg{
   text-decoration: none;
   text-transform: uppercase;
   color:white;
-  font-size:1.3em;
+  font-size:130%;
   padding:20px;
 }
 
@@ -511,7 +511,47 @@ svg{
   text-decoration: none;
 }
 
+/* Big Desktop Screen*/
+@media (min-width:1200px){
+    #mc_embed_signup input#mce-EMAIL{
+      width: 20%;
+    }
+    .sponsor h2{
+        font-size:300%;
+    }
+    .sponsor p{
+        font-size:1.4vw
+    }
+    .sponsor .sponsor-contents .btn{
+        font-size:1.4vw;
+    }
+    
+    .whole_nav{
+        padding:50px 180px;
+    }
+      .team .content h3 {
+      font-size:250%;
+    }
+    .team .content p {
+      font-size: 150%;
+    }
+    .sponsor{
+        padding:3% 10%;
+    }
+    .teampage{
+        padding:3% 10%;
+    }
+    .faq{
+        padding:3% 10%;
+    }
+    
+
+}
+
 @media (max-width: 991px) {
+   #mc_embed_signup_scroll{
+        padding-top:20%;
+    }
   .team .background {
     padding-top: 0;
     background-size: cover !important;
@@ -520,9 +560,18 @@ svg{
   .team:hover .background {
     background-size: cover !important;
   }
+  
+    
+  
 }
-
+/* Ipad */
 @media (max-width: 840px) {
+    .logo {
+      font-size: 150%;
+    }
+    .whole_nav{
+         padding:50px 20px;
+    }
     #menu{
         display:inline-block;
     }
@@ -566,4 +615,42 @@ svg{
         padding-top:10%;
     }
    
+    
+    .sponsor .image-col{
+        display:none;
+    }
+    .sponsor .sponsor-text{
+        width:100%;
+    }
+    .footer a{
+        font-size:100%;
+    }
+}
+/* phone */
+@media (max-width: 414px) {
+    .sponsor .sponsor-contents .btn-primary {
+        margin-right:0;
+    }
+    .sponsor .sponsor-contents .btn-link{
+         margin-top: 10px;
+        margin-left:0;
+        display:block!important;
+        text-align:center;
+    }
+    svg{
+      height: 80px;
+      width:100%;
+    }
+    .footer a:after{
+        content:"";
+    }
+     .sponsor{
+        padding:3% 6%;
+    }
+    .teampage{
+        padding:3% 6%;
+    }
+    .faq{
+        padding:3% 6%;
+    }
 }
