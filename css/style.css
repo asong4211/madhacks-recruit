@@ -283,7 +283,7 @@ h1#join {
   display: inline-table;
   vertical-align:middle;
   color: white;
-  font-size: 250%;
+  font-size: 200%;
   font-weight: 900;
   text-align:center;
   letter-spacing: 1px;
@@ -486,7 +486,7 @@ svg{
    /* margin-top: 30px; */
    padding:30px;
    position: relative;
-   height:10%;
+   height:13%;
    left: 0;
    bottom: 0;
    width: 100%;
