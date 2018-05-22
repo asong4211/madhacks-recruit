@@ -651,6 +651,9 @@ svg{
      .sponsor{
         padding:3% 6%;
     }
+    .sponsor .stext .sponsor-contents {
+        padding:0;
+    }
     .teampage{
         padding:3% 6%;
     }
