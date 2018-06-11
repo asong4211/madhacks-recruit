@@ -59,11 +59,11 @@ p {
   position: relative;
   top: 13px;
   left: -10px;
-  background-image: url('../img/mh.png');
-  background-size: 60px 52px;
+  background-image: url('../img/madhacks.png');
+  background-size: 60px 60px;
   display: inline-block;
   width: 60px;
-  height: 52px;
+  height: 60px;
   content:"";
 }
 
@@ -147,10 +147,11 @@ h1#join {
   letter-spacing: 1px;
 }
 #mc-embedded-subscribe{
-  background-color: #da2e2e;
+  background-color: #f3a022;
   color: #fff!important;
   text-decoration: none;
   font-size: 100%;
+  font-weight: 600;
   padding: 6px 22px 6px 22px;
   border-radius: 18px;
   border:1px solid #e8e8e8;
@@ -506,7 +507,7 @@ svg{
 }
 
 .footer a:after{
-  content:"at team@madhacks.org";
+  content:"at team@madhacks.io";
   font-weight:200;
 }
 
