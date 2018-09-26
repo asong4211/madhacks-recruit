@@ -1,3 +1,3 @@
 # Madhacks Recruit
 
-- Website: [www.madhacks.io](https://www.madhacks.io)
+- This website is currently not being used. 
